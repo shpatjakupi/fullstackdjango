@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Home Page</h1>
+{% if user.is_authenticated%}
+   <p>Name: {{ user }}</p>
+{% endif %}
+
+
+
+<body>
+    <img src="data:image/png;base64,{{ data }}" alt="" height="600" ,width="600">
+</body>
+
+
+
+{% endblock %}
